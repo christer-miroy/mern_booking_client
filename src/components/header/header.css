@@ -1,0 +1,153 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 10204px;
+    margin: 20px 0px 10px 0px;
+    border: 1px solid antiquewhite;
+}
+
+.headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+}
+
+.headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerListItem.active {
+    background-color: #A8510B;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.headerText {
+    margin: 0 40px;
+}
+
+.headerDescription {
+    margin: 20px 0px;
+}
+
+.headerBtn {
+    background-color: #0E5243;
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 40px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerBtn:hover {
+    background-color: antiquewhite;
+    color: #0E5243;
+}
+
+.headerSearch {
+    height: 30px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #A8510B;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.headerSearchInput, .headerSearchText {
+    border: none;
+    outline: none;
+}
+
+.headerBtnSearch {
+    background-color: #A8510B;
+    border: 1px solid #A8510B;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.headerBtnSearch:hover {
+    background-color: antiquewhite;
+    color: #A8510B;
+}
+
+.headerSearchItem {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.headerSearchInput {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 50px;
+}
+
+.options {
+    position: absolute;
+    top: 50px;
+    background-color: antiquewhite;
+    color: gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0E5243;
+    color: antiquewhite;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0E5243;
+}
+
+.optionCounterButton:disabled {
+    cursor: not-allowed;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
