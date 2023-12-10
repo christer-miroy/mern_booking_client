@@ -63,12 +63,19 @@ const Header = ({type}) => {
             </div>
 
             {type !== "list" && <>
-                <div className="headerText">
-                    <h1 className="headerTitle">Your next dream vacation starts here</h1>
-                    <p className='headerDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
+                <div className="headerSection">
+                    <div className="headerGroup1">
+                        <div className="headerText">
+                            <h1 className="headerTitle">Your next dream vacation starts here</h1>
+                            <p className='headerDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
 
-                <button className="headerBtn">Sign in / Register</button>
+                        <button className="headerBtn">Sign in / Register</button>
+                    </div>
+                    <div className="headerGroup2">
+                        <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGFyYWRpc2V8ZW58MHx8MHx8fDA%3D" className='headerImg' />
+                    </div>
+                </div>
 
                 <div className="headerSearch">
                     <div className="headerSearchItem">

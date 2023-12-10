@@ -19,9 +19,8 @@
 .headerList {
     display: flex;
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 10px;
-    margin-bottom: 50px;
 }
 
 .headerListItem {
@@ -149,6 +148,19 @@
     cursor: not-allowed;
 }
 
-.no-scroll {
-    overflow: hidden;
+.headerSection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerGroup2 {
+    margin: 0 40px;
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.headerImg {
+    height: 200px;
+    width: 100%;
 }
