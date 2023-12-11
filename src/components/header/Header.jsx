@@ -6,9 +6,11 @@ import { useEffect, useState } from 'react'
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { format } from 'date-fns'
+import { useNavigate } from 'react-router-dom'
 
 const Header = ({type}) => {
     const [openDate, setOpenDate] = useState(false);
+    const [destination, setDestination] = useState("");
     const [date, setDate] = useState([
         {
             startDate: new Date(),
@@ -31,6 +33,8 @@ const Header = ({type}) => {
         }
     }, [openDate]);
 
+    const navigate = useNavigate();
+
     const handleOption = (name, operation) => {
         setOptions(prev => {
             return {
@@ -39,6 +43,16 @@ const Header = ({type}) => {
             }
         })
     };
+
+    const handleSearch = () => {
+        navigate("/hotels", {
+            state: {
+                destination,
+                date,
+                options
+            }
+        });
+    }
 
   return (
     <div className='header'>
@@ -80,7 +94,7 @@ const Header = ({type}) => {
                 <div className="headerSearch">
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faLocationPin} className='headerIcon' />&nbsp;
-                        <input type="text" name="location" id="location" placeholder='Search Location' className='headerSearchInput' />
+                        <input type="text" name="location" id="location" placeholder='Search Location' onChange={e=>setDestination(e.target.value)} className='headerSearchInput' />
                     </div>
                     <div className="headerSearchItem">
                         <FontAwesomeIcon icon={faCalendar} className='headerIcon' />&nbsp;
@@ -125,7 +139,7 @@ const Header = ({type}) => {
                         </div>}
                     </div>
                     <div className="headerSearchItem">
-                        <button className="headerBtnSearch">Search</button>
+                        <button className="headerBtnSearch" onClick={handleSearch}>Search</button>
                     </div>
                 </div>
             </>}
