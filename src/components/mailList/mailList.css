@@ -2,6 +2,7 @@
     width: 1024px;
     margin-top: 50px;
     background-color: #A8510B;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +17,7 @@
     border: none;
     border-radius: 10px;
     margin-right: 10px;
+    outline: none;
 }
 
 .mailInputContainer>button {
@@ -26,6 +28,7 @@
     border-radius: 10px;
     padding: 5px;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .mailInputContainer>button:hover {
