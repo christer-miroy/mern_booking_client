@@ -1,13 +1,14 @@
 .listContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 .listWrapper {
     width: 95%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -20,6 +21,7 @@
     top: 10px;
     width: 100%;
     max-width: 1024px;
+    height: max-content;
 }
 
 .lsTitle {
@@ -88,6 +90,7 @@
     width: 100%;
     font-weight: 500;
     cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .listSearch>button:hover {
